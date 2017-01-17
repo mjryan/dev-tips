@@ -1,0 +1,78 @@
+// compileCompressed: styles.css﻿
+
+*
+  padding: 0
+  margin: 0
+  font-family: 'Roboto', sans-serif
+
+body
+  background: #000
+
+section
+  position: fixed
+  background:
+    repeat: no-repeat
+    size: cover
+    attachment: fixed
+  width: 100%
+  height: 100%
+
+.content
+  position: fixed
+  width: 100%
+
+#slide-1
+  background:
+    image: url('../images/1.jpg')
+
+  .content
+    color: #fff
+    text-align: center
+    font-size: 800%
+    font-weight: bold
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.3)
+
+#slide-2
+  background:
+    image: url('../images/2.jpg')
+
+  h1
+    font-size: 400%
+
+  .content
+    width: 40%
+    left: 40%
+    top: 3%
+    font-size: 130%
+    font-weight: bold
+
+#slide-3
+  background:
+    image: url('../images/3.jpg')
+
+  .content
+    font-size: 800%
+    color: #fff
+    width: 60%
+    background: rgba(0,0,0,0.8)
+    padding: 2% 3%
+    text-align: right
+    top: 30%
+    left: 50%
+
+#progress-wrapper
+  position: fixed
+  width: 60%
+  height: 10px
+  bottom: 0
+  right: 0
+  left: 0
+  z-index: 1000
+  margin: 2% auto
+  border-radius: 5px
+  background: rgba(0, 0, 0, 0.5)
+
+  #progress-bar
+    height: 10px
+    border-radius: 5px
+    z-index: 1500

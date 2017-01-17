@@ -1,0 +1,140 @@
+// compileCompressed: main.css﻿
+
+*
+  padding: 0
+  margin: 0
+  font-family: 'Roboto', sans-serif
+
+body
+  background: #bbb
+  padding-bottom: 100px
+
+h2, h3
+  margin: 0 0 .75em 0
+
+
+// Form
+.form-container
+  background-color: #fff
+  width: 80%
+  margin: 20px auto
+  padding: 30px
+
+  .form-row
+    padding: 10px
+    display: flex
+    label
+      padding-right: 10px
+    input
+      flex: 1
+
+// Main column
+.column-layout
+  max-height: 1300px
+  background-color: #fff
+  margin: 40px auto 0 auto
+  line-height: 1.65
+  padding: 20px 50px
+
+  .main-column
+    flex: 3
+    order: 2
+
+  .sidebar-one
+    flex: 1
+    order: 1
+
+  .sidebar-two
+    flex: 1
+    order: 3
+
+
+.call-outs-container
+  max-width: 1400px
+  margin: 40px auto 0 auto
+
+  .call-out
+    padding: 20px
+    box-sizing: border-box
+    margin-bottom: 20px
+    flex-basis: 30%
+
+    &:nth-child(1)
+      background: #c0dbe2
+
+    &:nth-child(2)
+      background: #cdf1c3
+
+    &:nth-child(3)
+      background: #ccb9da
+
+
+@media (min-width: 900px)
+  .column-layout
+    display: flex
+
+  .call-outs-container
+    display: flex
+    align-items: stretch
+    justify-content: space-between
+
+
+// fourth example
+.fixed-size-container
+  max-width: 1400px
+  margin: 40px auto 0 auto
+  background-color: #fff
+  padding: 30px 0
+  display: flex
+  align-items: center
+  justify-content: space-around
+  flex-wrap: wrap
+
+
+.fixed-size
+  width: 150px
+  height: 100px
+  background-color: #990b47
+  color: #fff
+  line-height: 100px
+  text-align: center
+  font-weight: bold
+  font-size: 60px
+  margin-bottom: 20px
+
+
+.banner
+  height: 400px
+  max-width: 700px
+  margin: 40px auto 40px auto
+  background-color: #2a2a2a
+  display: flex
+
+.center-me
+  color: #fff
+  font-size: 50px
+  margin: auto
+
+.equal-height-container
+  max-width: 900px
+  margin: 0 auto
+  display: flex
+
+  .first
+    background-color: #fff
+    padding: 20px
+    flex: 1
+
+  .second
+    background-color: yellow
+    flex: 1
+    display: flex
+    flex-direction: column
+
+  .second-a
+    background-color: #c0dbe2
+    flex: 1
+
+  .second-b
+    background-color: #cdf1c3
+    flex: 1

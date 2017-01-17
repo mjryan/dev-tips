@@ -1,0 +1,58 @@
+// output:index.html
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width", intial-scale=1, maximum-scale=1)
+    title Parallax Scrolling
+    link(href="http://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css")
+    link(rel="stylesheet" href="assets/css/styles.css")
+    
+  body
+  
+    #progress-wrapper
+      #progress-bar(
+        data-0="width:0%; background:rgba(255,255,255,0.3)",
+        data-end="width:100%; background:rgba(255,255,255,0.8)"
+        )
+    
+    section#slide-1
+    
+      .content(
+        data-0="opacity:0; top:40%; transform:scale(0)", 
+        data-1000="opacity:1; transform:scale(1)", 
+        data-2000="", 
+        data-3000="opacity:0; top:-10%;"
+        ) Parallax Scrolling
+    
+    
+    section#slide-2(
+      data-2000="top:100%", 
+      data-3000="top:0%"
+      )
+    
+      .content(
+        data-3500="transform:scale(0) rotate(180deg)", 
+        data-5000="transform:scale(1) rotate(360deg)", 
+        data-6000="opacity:1", 
+        data-8000="opacity:0"
+        )
+        
+        h1 Lorem ipsum
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+    
+    section#slide-3(
+      data-6500="top:100%; opacity:0", 
+      data-7500="top:0; opacity:1"
+      )  
+      
+      .content(
+        data-7500="opacity:0; transform:rotate(90deg); left:-200%",
+        data-8500="opacity:1; transform:rotate(0deg); left:0"
+        ) And so on...
+      
+
+    script(src="assets/js/jquery-3.1.1.min.js")
+    script(src="assets/js/skrollr.js")
+    script(src="assets/js/functions.js")
