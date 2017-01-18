@@ -15,4 +15,4 @@ GH-Pages:
 
 * Spinners - https://mjryan.github.io/dev-tips/spinners/app/
 
-* StepByStepForm - https://mjryan.github.io/dev-tips/StepByStepForm/app/
+* StepByStepForm - https://mjryan.github.io/dev-tips/stepByStepForm/app/
